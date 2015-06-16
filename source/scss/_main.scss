@@ -1,8 +1,78 @@
 /**
  *  COMMENT
  */
+/* drawer設定 */
+.drawer-left {
+	&.drawer-open {
+		.drawer-hamburger-icon {
+			left: -80px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+.drawer-main {
+	width: 200px;
+}
 
-
+/* グロナビ */
+.gnav {
+	background-color: $gray-dark;
+	font-size: $font-size-midium;
+	border-right: 1px $gray-light solid;
+	ul {
+		@include list-unstyled;
+	}
+	li {
+		&:nth-child(1) {
+			i {
+				margin: 0 16px 0 0;
+			}
+		}
+		&:nth-child(2) {
+			i {
+				margin: 0 8px 0 0;
+			}
+		}
+		&:nth-child(3) {
+			i {
+				margin: 0 10px 0 0;
+			}
+		}
+		&:nth-child(4) {
+			i {
+				margin: 0 10px 0 0;
+			}
+		}
+		&:nth-child(5) {
+			i {
+				margin: 0 10px 0 0;
+			}
+		}
+		&:nth-child(6) {
+			i {
+				margin: 0 14px 0 0;
+			}
+		}
+		&:nth-child(7) {
+			i {
+				margin: 0 14px 0 0;
+			}
+		}
+	}
+	a {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		border-bottom: 1px $gray-light solid;
+		&:hover,
+		&:focus {
+			background-color: $gray-darker;
+			text-decoration: none;
+		}
+	}
+}
 /* グリフアイコン */
  .glyphicon {
      top: -.1em;
