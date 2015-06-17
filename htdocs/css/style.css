@@ -4115,6 +4115,12 @@ body.drawer-navbar.drawer-fixed {
   text-decoration: none;
 }
 
+/* ページタイトル */
+.page-title {
+  font-size: 18px;
+  text-align: center;
+}
+
 /* グリフアイコン */
 .glyphicon {
   top: -.1em;
