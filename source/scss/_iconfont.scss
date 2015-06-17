@@ -8,16 +8,19 @@
 }
 
 .iconfont-adjust:before,
-.iconfont-category2:before,
-.iconfont-category3:before,
-.iconfont-category4:before,
+.iconfont-card:before,
 .iconfont-check:before,
+.iconfont-clip:before,
 .iconfont-close:before,
 .iconfont-followers:before,
+.iconfont-hart:before,
+.iconfont-history:before,
 .iconfont-humberger:before,
+.iconfont-info:before,
 .iconfont-notice:before,
+.iconfont-result:before,
 .iconfont-search:before,
-.iconfont-topnews:before {
+.iconfont-summary:before {
   position: relative;
   top: -.1em;
   font-family: "iconfont";
@@ -35,13 +38,16 @@
 }
 
 .iconfont-adjust:before { content: "\E001" }
-.iconfont-category2:before { content: "\E002" }
-.iconfont-category3:before { content: "\E003" }
-.iconfont-category4:before { content: "\E004" }
-.iconfont-check:before { content: "\E005" }
-.iconfont-close:before { content: "\E006" }
-.iconfont-followers:before { content: "\E007" }
-.iconfont-humberger:before { content: "\E008" }
-.iconfont-notice:before { content: "\E009" }
-.iconfont-search:before { content: "\E00A" }
-.iconfont-topnews:before { content: "\E00B" }
+.iconfont-card:before { content: "\E002" }
+.iconfont-check:before { content: "\E003" }
+.iconfont-clip:before { content: "\E004" }
+.iconfont-close:before { content: "\E005" }
+.iconfont-followers:before { content: "\E006" }
+.iconfont-hart:before { content: "\E007" }
+.iconfont-history:before { content: "\E008" }
+.iconfont-humberger:before { content: "\E009" }
+.iconfont-info:before { content: "\E00A" }
+.iconfont-notice:before { content: "\E00B" }
+.iconfont-result:before { content: "\E00C" }
+.iconfont-search:before { content: "\E00D" }
+.iconfont-summary:before { content: "\E00E" }

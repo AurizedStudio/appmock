@@ -1375,16 +1375,19 @@ th {
   src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
 }
 .iconfont-adjust:before,
-.iconfont-category2:before,
-.iconfont-category3:before,
-.iconfont-category4:before,
+.iconfont-card:before,
 .iconfont-check:before,
+.iconfont-clip:before,
 .iconfont-close:before,
 .iconfont-followers:before,
+.iconfont-hart:before,
+.iconfont-history:before,
 .iconfont-humberger:before,
+.iconfont-info:before,
 .iconfont-notice:before,
+.iconfont-result:before,
 .iconfont-search:before,
-.iconfont-topnews:before {
+.iconfont-summary:before {
   position: relative;
   top: -.1em;
   font-family: "iconfont";
@@ -1405,44 +1408,56 @@ th {
   content: "";
 }
 
-.iconfont-category2:before {
+.iconfont-card:before {
   content: "";
 }
 
-.iconfont-category3:before {
+.iconfont-check:before {
   content: "";
 }
 
-.iconfont-category4:before {
+.iconfont-clip:before {
   content: "";
 }
 
-.iconfont-check:before {
+.iconfont-close:before {
   content: "";
 }
 
-.iconfont-close:before {
+.iconfont-followers:before {
   content: "";
 }
 
-.iconfont-followers:before {
+.iconfont-hart:before {
   content: "";
 }
 
-.iconfont-humberger:before {
+.iconfont-history:before {
   content: "";
 }
 
-.iconfont-notice:before {
+.iconfont-humberger:before {
   content: "";
 }
 
-.iconfont-search:before {
+.iconfont-info:before {
   content: "";
 }
 
-.iconfont-topnews:before {
+.iconfont-notice:before {
   content: "";
+}
+
+.iconfont-result:before {
+  content: "";
+}
+
+.iconfont-search:before {
+  content: "";
+}
+
+.iconfont-summary:before {
+  content: "";
 }
 
 * {
@@ -4234,25 +4249,28 @@ body.drawer-navbar.drawer-fixed {
   list-style: none;
 }
 .gnav li:nth-child(1) i {
-  margin: 0 16px 0 0;
+  margin: 0 11px 0 0;
 }
 .gnav li:nth-child(2) i {
-  margin: 0 8px 0 0;
+  margin: 0 7px 0 0;
 }
 .gnav li:nth-child(3) i {
   margin: 0 10px 0 0;
 }
 .gnav li:nth-child(4) i {
-  margin: 0 10px 0 0;
+  margin: 0 15px 0 0;
 }
 .gnav li:nth-child(5) i {
-  margin: 0 10px 0 0;
+  margin: 0 15px 0 0;
 }
 .gnav li:nth-child(6) i {
-  margin: 0 14px 0 0;
+  margin: 0 13px 0 0;
 }
 .gnav li:nth-child(7) i {
-  margin: 0 14px 0 0;
+  margin: 0 13px 0 0;
+}
+.gnav li:nth-child(8) i {
+  margin: 0 13px 0 0;
 }
 .gnav a {
   display: block;
