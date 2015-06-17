@@ -18,9 +18,59 @@
 .drawer-hamburger-icon,
 .drawer-hamburger-icon:before,
 .drawer-hamburger-icon:after {
-	background-color: $gray-light;
+	background-color: #fff;
 }
-
+.drawer-overlay {
+	padding: 100px 0 0 0;
+}
+/* ヘッドバー */
+.head-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	@include clearfix;
+	background-color: $gray-dark;
+}
+/* ページタイトル */
+.page-title {
+	float: left;
+	width: 70%;
+	width: calc(100% - 162px);
+	margin: 26px 0 18px;
+	padding: 0 0 0 20%;
+	text-align: center;
+	font-size: $font-size-large;
+	color: #fff;
+	@media ( min-width: 400px ) {
+		padding: 0 0 0 12%;
+	}
+}
+/* ヘッドナビ */
+.utility-nav { // <ul>
+	float: right;
+	width: 162px;
+	margin: 0;
+	text-align: center;
+	@include list-unstyled;
+	li {
+		display: inline-block;
+		&:first-child {
+			a {
+				padding: 27px 10px 21px;
+			}
+		}
+	}
+	a {
+		display: block;
+		padding: 27px 6px 21px;
+		color: #fff;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}
 /* グロナビ */
 .gnav {
 	background-color: $gray-dark;
@@ -78,12 +128,6 @@
 		}
 	}
 }
-/* ページタイトル */
-.page-title {
-	font-size: $font-size-large;
-	text-align: center;
-}
-
 /* グリフアイコン */
  .glyphicon {
      top: -.1em;

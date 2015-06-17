@@ -1456,7 +1456,7 @@ th {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -4159,7 +4159,68 @@ body.drawer-navbar.drawer-fixed {
 .drawer-hamburger-icon,
 .drawer-hamburger-icon:before,
 .drawer-hamburger-icon:after {
-  background-color: #777777;
+  background-color: #fff;
+}
+
+.drawer-overlay {
+  padding: 100px 0 0 0;
+}
+
+/* ヘッドバー */
+.head-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333333;
+}
+.head-bar:before, .head-bar:after {
+  content: " ";
+  display: table;
+}
+.head-bar:after {
+  clear: both;
+}
+
+/* ページタイトル */
+.page-title {
+  float: left;
+  width: 70%;
+  width: calc(100% - 162px);
+  margin: 26px 0 18px;
+  padding: 0 0 0 20%;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+@media (min-width: 400px) {
+  .page-title {
+    padding: 0 0 0 12%;
+  }
+}
+
+/* ヘッドナビ */
+.utility-nav {
+  float: right;
+  width: 162px;
+  margin: 0;
+  text-align: center;
+  padding-left: 0;
+  list-style: none;
+}
+.utility-nav li {
+  display: inline-block;
+}
+.utility-nav li:first-child a {
+  padding: 27px 10px 21px;
+}
+.utility-nav a {
+  display: block;
+  padding: 27px 6px 21px;
+  color: #fff;
+}
+.utility-nav a:hover, .utility-nav a:focus {
+  text-decoration: none;
 }
 
 /* グロナビ */
@@ -4202,12 +4263,6 @@ body.drawer-navbar.drawer-fixed {
 .gnav a:hover, .gnav a:focus {
   background-color: #222222;
   text-decoration: none;
-}
-
-/* ページタイトル */
-.page-title {
-  font-size: 18px;
-  text-align: center;
 }
 
 /* グリフアイコン */
