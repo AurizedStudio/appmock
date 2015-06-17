@@ -4,16 +4,21 @@
 /* drawer設定 */
 .drawer-left {
 	&.drawer-open {
+//		.drawer-hamburger {
+//			left: -80px; // iOS7でなぜか見えなくなるので、↓のiconを移動して対応
+//		}
 		.drawer-hamburger-icon {
 			left: -80px;
-			&:hover {
-				cursor: pointer;
-			}
 		}
 	}
 }
 .drawer-main {
 	width: 200px;
+}
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:before,
+.drawer-hamburger-icon:after {
+	background-color: $gray-light;
 }
 
 /* グロナビ */

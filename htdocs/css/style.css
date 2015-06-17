@@ -4062,12 +4062,15 @@ body.drawer-navbar.drawer-fixed {
 .drawer-left.drawer-open .drawer-hamburger-icon {
   left: -80px;
 }
-.drawer-left.drawer-open .drawer-hamburger-icon:hover {
-  cursor: pointer;
-}
 
 .drawer-main {
   width: 200px;
+}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:before,
+.drawer-hamburger-icon:after {
+  background-color: #777777;
 }
 
 /* グロナビ */
