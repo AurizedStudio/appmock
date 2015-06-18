@@ -1479,7 +1479,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #fff;
+  background-color: #eeeeee;
 }
 
 input,
@@ -1526,7 +1526,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #eeeeee;
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
@@ -2745,7 +2745,7 @@ th {
   border-top: 2px solid #ddd;
 }
 .table .table {
-  background-color: #fff;
+  background-color: #eeeeee;
 }
 
 .table-condensed > thead > tr > th,
@@ -4188,6 +4188,7 @@ body.drawer-navbar.drawer-fixed {
   left: 0;
   right: 0;
   background-color: #333333;
+  z-index: 10;
 }
 .head-bar:before, .head-bar:after {
   content: " ";
@@ -4281,6 +4282,147 @@ body.drawer-navbar.drawer-fixed {
 .gnav a:hover, .gnav a:focus {
   background-color: #222222;
   text-decoration: none;
+}
+
+/* メインコンテンツ */
+.main {
+  width: 100%;
+}
+
+/* 患者情報 */
+.exam-date {
+  display: table;
+  width: 100%;
+  padding-left: 0;
+  list-style: none;
+}
+.exam-date li {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 571px) {
+  .exam-date li {
+    display: table-cell;
+  }
+}
+.exam-date li:nth-child(1) {
+  vertical-align: middle;
+}
+@media (min-width: 571px) {
+  .exam-date li:nth-child(1) {
+    width: 33%;
+  }
+}
+.exam-date li:nth-child(2) {
+  margin: 16px 0;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 22px;
+}
+@media (min-width: 571px) {
+  .exam-date li:nth-child(2) {
+    width: 34%;
+    margin: 0;
+  }
+}
+.exam-date li:nth-child(3) {
+  vertical-align: middle;
+  text-align: right;
+}
+@media (min-width: 571px) {
+  .exam-date li:nth-child(3) {
+    width: 33%;
+  }
+  .exam-date li:nth-child(3) a {
+    display: inline-block;
+  }
+}
+.exam-date a {
+  color: #333333;
+}
+.exam-date .glyphicon {
+  font-size: 18px;
+}
+
+.exam-date-left {
+  display: inline;
+}
+@media (min-width: 571px) {
+  .exam-date-left {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.exam-date-right {
+  display: inline;
+}
+@media (min-width: 571px) {
+  .exam-date-right {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 571px) {
+  .exam-date-date {
+    display: block;
+  }
+}
+
+.exam-list .table {
+  background-color: #fff;
+}
+.exam-list .table td {
+  vertical-align: middle;
+}
+.exam-list ruby {
+  font-size: 16px;
+}
+
+.exam-label-col {
+  width: 1%;
+}
+
+.exam-old {
+  display: block;
+}
+
+.exam-predate {
+  display: block;
+  font-weight: bold;
+}
+
+.exam-predate-date {
+  display: block;
+}
+
+.exam-label-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.exam-label {
+  display: block;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+}
+
+.exam-first {
+  background-color: #d98825;
+}
+
+.exam-intro {
+  background-color: #2a2d99;
+}
+
+.exam-ins {
+  background-color: #52cc54;
 }
 
 /* グリフアイコン */

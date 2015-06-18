@@ -31,6 +31,7 @@
 	right: 0;
 	@include clearfix;
 	background-color: $gray-dark;
+	z-index: $zindex-head-bar;
 }
 /* ページタイトル */
 .page-title {
@@ -132,6 +133,120 @@
 			text-decoration: none;
 		}
 	}
+}
+/* メインコンテンツ */
+.main {
+	width: 100%;
+}
+/* 患者情報 */
+.exam-date { // <ul>
+	display: table;
+	width: 100%;
+	@include list-unstyled;
+	li {
+		display: block;
+		width: 100%;
+		@media ( min-width: 571px ) {
+			display: table-cell;
+		}
+		&:nth-child(1) {
+			vertical-align: middle;
+			@media ( min-width: 571px ) {
+				width: 33%;
+			}
+		}
+		&:nth-child(2) {
+			margin: 16px 0;
+			vertical-align: middle;
+			text-align: center;
+			font-size: $font-size-xxlarge;
+			@media ( min-width: 571px ) {
+				width: 34%;
+				margin: 0;
+			}
+		}
+		&:nth-child(3) {
+			vertical-align: middle;
+			text-align: right;
+			@media ( min-width: 571px ) {
+				width: 33%;
+				a {
+					display: inline-block;
+				}
+			}
+		}
+	}
+	a {
+		color: $text-color;
+	}
+	.glyphicon {
+		font-size: $font-size-large;
+	}
+}
+.exam-date-left {
+	display: inline;
+	@media ( min-width: 571px ) {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.exam-date-right {
+	display: inline;
+	@media ( min-width: 571px ) {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.exam-date-date { // <span>
+	@media ( min-width: 571px ) {
+		display: block;
+	}
+}
+.exam-list {
+	.table {
+		background-color: #fff;
+		td {
+			vertical-align: middle;
+		}
+	}
+	ruby {
+		font-size: $font-size-midium;
+	}
+}
+.exam-label-col {
+	width: 1%;
+}
+.exam-old {
+	display: block;
+}
+.exam-predate {
+	display: block;
+	font-weight: bold;
+}
+.exam-predate-date {
+	display: block;
+}
+.exam-label-list { // <ul>
+	@include list-unstyled;
+}
+.exam-label {
+	display: block;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	padding: 2px;
+	text-align: center;
+	font-size: $font-size-small;
+	border-radius: 50%;
+}
+.exam-first {
+	background-color: $label-first;
+}
+.exam-intro {
+	background-color: $label-intro;
+}
+.exam-ins {
+	background-color: $label-ins;
 }
 /* グリフアイコン */
  .glyphicon {
