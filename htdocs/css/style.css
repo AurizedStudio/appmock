@@ -4380,17 +4380,24 @@ body.drawer-navbar.drawer-fixed {
   font-size: 16px;
 }
 
-.exam-list-today,
-.exam-list-past {
+.exam-list-today {
   background-color: #fff;
 }
-.exam-list-today:before, .exam-list-today:after,
-.exam-list-past:before,
-.exam-list-past:after {
+.exam-list-today:before, .exam-list-today:after {
   content: " ";
   display: table;
 }
-.exam-list-today:after,
+.exam-list-today:after {
+  clear: both;
+}
+
+.exam-list-past {
+  background-color: #fff;
+}
+.exam-list-past:before, .exam-list-past:after {
+  content: " ";
+  display: table;
+}
 .exam-list-past:after {
   clear: both;
 }
@@ -4534,6 +4541,7 @@ body.drawer-navbar.drawer-fixed {
   text-align: center;
   font-size: 18px;
   border-bottom: 1px #ddd solid;
+  cursor: pointer;
 }
 .exam-done p {
   margin: 0;

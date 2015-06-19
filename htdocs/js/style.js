@@ -23,4 +23,16 @@ $(function(){
 	if( window.matchMedia('(max-width:499px)').matches ){
   		$('.exam-list-item-equal').matchHeight();
 	}
+	
+	// 診察終了ボタン
+	var doneBtn = $('.exam-done');
+	var doneList = $('.exam-list-past');
+	doneBtn.on('click', function(){
+		doneList.slideToggle('fast').toggleClass('is-exam-list-past');
+		if(doneList.hasClass('is-exam-list-past')){
+			doneBtn.find('.glyphicon').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
+		} else {
+			doneBtn.find('.glyphicon').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+		}
+	});
 });
