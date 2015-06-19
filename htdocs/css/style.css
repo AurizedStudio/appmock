@@ -4178,7 +4178,7 @@ body.drawer-navbar.drawer-fixed {
 }
 
 .drawer-overlay {
-  padding: 100px 0 0 0;
+  padding: 100px 0 40px 0;
 }
 
 /* ヘッドバー */
@@ -4289,7 +4289,7 @@ body.drawer-navbar.drawer-fixed {
   width: 100%;
 }
 
-/* 患者情報 */
+/* 患者情報 当日 */
 .exam-date {
   display: table;
   width: 100%;
@@ -4300,7 +4300,7 @@ body.drawer-navbar.drawer-fixed {
   display: block;
   width: 100%;
 }
-@media (min-width: 571px) {
+@media (min-width: 719px) {
   .exam-date li {
     display: table-cell;
   }
@@ -4308,7 +4308,7 @@ body.drawer-navbar.drawer-fixed {
 .exam-date li:nth-child(1) {
   vertical-align: middle;
 }
-@media (min-width: 571px) {
+@media (min-width: 719px) {
   .exam-date li:nth-child(1) {
     width: 33%;
   }
@@ -4317,9 +4317,9 @@ body.drawer-navbar.drawer-fixed {
   margin: 16px 0;
   vertical-align: middle;
   text-align: center;
-  font-size: 22px;
+  font-size: 28px;
 }
-@media (min-width: 571px) {
+@media (min-width: 719px) {
   .exam-date li:nth-child(2) {
     width: 34%;
     margin: 0;
@@ -4329,7 +4329,7 @@ body.drawer-navbar.drawer-fixed {
   vertical-align: middle;
   text-align: right;
 }
-@media (min-width: 571px) {
+@media (min-width: 719px) {
   .exam-date li:nth-child(3) {
     width: 33%;
   }
@@ -4347,7 +4347,7 @@ body.drawer-navbar.drawer-fixed {
 .exam-date-left {
   display: inline;
 }
-@media (min-width: 571px) {
+@media (min-width: 719px) {
   .exam-date-left {
     display: table-cell;
     vertical-align: middle;
@@ -4357,14 +4357,14 @@ body.drawer-navbar.drawer-fixed {
 .exam-date-right {
   display: inline;
 }
-@media (min-width: 571px) {
+@media (min-width: 719px) {
   .exam-date-right {
     display: table-cell;
     vertical-align: middle;
   }
 }
 
-@media (min-width: 571px) {
+@media (min-width: 719px) {
   .exam-date-date {
     display: block;
   }
@@ -4378,6 +4378,135 @@ body.drawer-navbar.drawer-fixed {
 }
 .exam-list ruby {
   font-size: 16px;
+}
+
+.exam-list-today,
+.exam-list-past {
+  background-color: #fff;
+}
+.exam-list-today:before, .exam-list-today:after,
+.exam-list-past:before,
+.exam-list-past:after {
+  content: " ";
+  display: table;
+}
+.exam-list-today:after,
+.exam-list-past:after {
+  clear: both;
+}
+
+.exam-list-item {
+  float: left;
+  border-bottom: 1px #ddd solid;
+  width: 50%;
+  padding: 4px;
+}
+@media (min-width: 500px) {
+  .exam-list-item {
+    float: none;
+    width: auto;
+    padding: 0;
+  }
+}
+.exam-list-item a {
+  display: block;
+  color: #333333;
+}
+.exam-list-item a:hover, .exam-list-item a:focus {
+  background-color: #dbf1fa;
+  text-decoration: none;
+}
+.exam-list-item ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 500px) {
+  .exam-list-item ul {
+    display: table;
+  }
+}
+@media (min-width: 500px) {
+  .exam-list-item li {
+    display: table-cell;
+    padding: 8px;
+    vertical-align: middle;
+  }
+  .exam-list-item li:nth-child(1) {
+    width: 36px;
+  }
+  .exam-list-item li:nth-child(2) {
+    width: 25%;
+  }
+  .exam-list-item li:nth-child(3) {
+    width: 30%;
+  }
+  .exam-list-item li:nth-child(4) {
+    width: 25%;
+  }
+  .exam-list-item li:nth-child(5) {
+    width: calc(100% - 36px - 25% - 30% - 25%);
+  }
+}
+.exam-list-item.exam-list-item-head {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .exam-list-item.exam-list-item-head {
+    clear: none;
+    width: auto;
+  }
+}
+.exam-list-item.exam-list-item-head li {
+  float: left;
+  margin: 0 10px 0 0;
+}
+@media (min-width: 500px) {
+  .exam-list-item.exam-list-item-head li {
+    float: none;
+    margin: 0;
+    font-weight: bold;
+  }
+}
+.exam-list-item.exam-list-item-top {
+  clear: both;
+}
+@media (min-width: 500px) {
+  .exam-list-item.exam-list-item-top {
+    clear: none;
+  }
+}
+.exam-list-item:last-child {
+  border-bottom: none;
+}
+
+.exam-label {
+  display: inline-block;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+}
+@media (min-width: 500px) {
+  .exam-label {
+    display: block;
+  }
+}
+
+.exam-first {
+  background-color: #d98825;
+}
+
+.exam-intro {
+  background-color: #2a2d99;
+}
+
+.exam-ins {
+  background-color: #52cc54;
 }
 
 .exam-label-col {
@@ -4397,32 +4526,20 @@ body.drawer-navbar.drawer-fixed {
   display: block;
 }
 
-.exam-label-list {
-  padding-left: 0;
-  list-style: none;
-}
-
-.exam-label {
-  display: block;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
+/* 患者情報 診察終了トグル */
+.exam-done {
+  background-color: #fff;
+  margin: 4px 0 0 0;
+  padding: 10px 0;
   text-align: center;
-  font-size: 12px;
-  border-radius: 50%;
+  font-size: 18px;
+  border-bottom: 1px #ddd solid;
 }
-
-.exam-first {
-  background-color: #d98825;
+.exam-done p {
+  margin: 0;
 }
-
-.exam-intro {
-  background-color: #2a2d99;
-}
-
-.exam-ins {
-  background-color: #52cc54;
+.exam-done .glyphicon {
+  margin: 0 0 0 4px;
 }
 
 /* グリフアイコン */
