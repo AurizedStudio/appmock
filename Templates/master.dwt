@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="ja"><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>App Mock Example</title>
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="format-detection" content="telephone=no">
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="icon" href="favicon.ico">
-<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
-<link rel="stylesheet" href="css/style.css">
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<link rel="shortcut icon" href="../htdocs/favicon.ico">
+<link rel="icon" href="../htdocs/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="../htdocs/apple-touch-icon.png">
+<link rel="stylesheet" href="../htdocs/css/style.css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 <body class="drawer drawer-left">
 <header role="banner">
@@ -167,7 +167,7 @@
 			<nav class="drawer-nav" role="navigation">
 				<ul class="drawer-menu">
 					<li class="drawer-menu-item"><a href="#"><i class="iconfont-clip"></i>トップニュース</a></li>
-					<li class="drawer-menu-item"><a href="view-patient-info.html"><i class="iconfont-hart"></i>本日の患者</a></li>
+					<li class="drawer-menu-item"><a href="../htdocs/view-patient-info.html"><i class="iconfont-hart"></i>本日の患者</a></li>
 					<li class="drawer-menu-item"><a href="#"><i class="iconfont-followers"></i>患者検索</a></li>
 					<li class="drawer-menu-item"><a href="#"><i class="iconfont-summary"></i>最新サマリ</a></li>
 					<li class="drawer-menu-item"><a href="#"><i class="iconfont-result"></i>検索結果</a></li>
@@ -183,23 +183,23 @@
 	</div>
 </header>
 <div class="container-fluid">
-	<main class="drawer-overlay" role="main"><!-- InstanceBeginEditable name="main" -->
+	<main class="drawer-overlay" role="main"><!-- TemplateBeginEditable name="main" -->
 	<p>メインコンテンツ</p>
 	<p>メインコンテンツ</p>
 	<p>メインコンテンツ</p>
-	<!-- InstanceEndEditable --></main>
+	<!-- TemplateEndEditable --></main>
 	<footer class="footer"> </footer>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script> 
 <script src="//cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script> 
 <script src="//cdn.rawgit.com/ungki/bootstrap.dropdown/3.3.1/dropdown.min.js"></script> 
-<script src="js/jquery.drawer.min.js"></script> 
-<!-- InstanceBeginEditable name="foot" --> 
+<script src="../htdocs/js/jquery.drawer.min.js"></script> 
+<!-- TemplateBeginEditable name="foot" --> 
 <!-- build:js js/style.js --> 
 
 <!-- endbuild --> 
-<script src="js/style.js"></script> 
-<!-- InstanceEndEditable -->
+<script src="../htdocs/js/style.js"></script> 
+<!-- TemplateEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+</html>
