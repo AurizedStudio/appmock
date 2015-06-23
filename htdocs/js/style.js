@@ -28,11 +28,23 @@ $(function(){
 	var doneBtn = $('.exam-done');
 	var doneList = $('.exam-list-past');
 	doneBtn.on('click', function(){
-		doneList.slideToggle('fast').toggleClass('is-exam-list-past');
+		doneList.slideToggle().toggleClass('is-exam-list-past');
 		if(doneList.hasClass('is-exam-list-past')){
 			doneBtn.find('.glyphicon').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
 		} else {
 			doneBtn.find('.glyphicon').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
 		}
 	});
+
+	// 患者検索パネル
+	var searchPanel = $(".search-panel");
+	var searchPanelUp = $(".search-panel-up");
+	var searchPanelBtn = $(".is-search-btn");
+	searchPanelBtn.on('click', function(){
+		searchPanel.slideDown();
+	});
+	searchPanelUp.on('click', function(){
+		searchPanel.slideUp();
+	});
+	
 });

@@ -68,24 +68,20 @@ a.btn {
 .btn-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
-.btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+.btn-input {
+  @include button-variant($btn-input-color, $btn-input-bg, $btn-input-border);
 }
-// Success appears as green
-.btn-success {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+.btn-updown {
+  @include button-variant($btn-updown-color, $btn-updown-bg, $btn-updown-border);
 }
-// Info appears as blue-green
-.btn-info {
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+.btn-tsunagi {
+  @include button-variant($btn-tsunagi-color, $btn-tsunagi-bg, $btn-tsunagi-border);
 }
-// Warning appears as orange
-.btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+.btn-checkbtn {
+  @include button-variant($btn-checkbtn-color, $btn-checkbtn-bg, $btn-checkbtn-border);
 }
-// Danger and error appear as red
-.btn-danger {
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+.btn-submit {
+@include button-variant($btn-submit-color, $btn-submit-bg, $btn-submit-border);
 }
 
 

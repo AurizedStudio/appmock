@@ -20,7 +20,8 @@
 .iconfont-notice:before,
 .iconfont-result:before,
 .iconfont-search:before,
-.iconfont-summary:before {
+.iconfont-summary:before,
+.iconfont-upstop:before {
   position: relative;
   top: -.1em;
   font-family: "iconfont";
@@ -51,3 +52,4 @@
 .iconfont-result:before { content: "\E00C" }
 .iconfont-search:before { content: "\E00D" }
 .iconfont-summary:before { content: "\E00E" }
+.iconfont-upstop:before { content: "\E00F" }
